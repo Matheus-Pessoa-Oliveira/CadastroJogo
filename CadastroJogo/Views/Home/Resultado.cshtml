@@ -1,0 +1,49 @@
+﻿
+@model CadastroJogo.Models.Jogo
+
+@{
+    ViewBag.Title = "Resultado";
+}
+
+<h2>Cadastro e apresentação de jogos para PS5 (Playstation 5)</h2>
+<fieldset>
+    <legend>Dados do Jogo</legend>
+    <div class="editor-label">
+        Nome
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+    <div class="editor-label">
+        Versão
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Versao)
+    </div>
+    <div class="editor-label">
+        Desenvolvedor
+    </div>
+    <div class=" editor-field">
+        @Html.DisplayFor(model => model.Desenvolvedor)
+    </div>
+    <div class="editor-label">
+        Gênero
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.Genero)
+    </div>
+    <div class="editor-label">
+        Faixa etária
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.FaixaEt)
+    </div>
+    <div class="editor-label">
+        Ano de Lançamento
+    </div>
+    <div class="editor-field">
+        @Html.DisplayFor(model => model.AnoLanc)
+    </div>
+    <p>@Html.ActionLink("Voltar", "Index")</p>
+</fieldset>
+
